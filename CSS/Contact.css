@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Open Sans;
+    text-decoration: none;
+}
+
+body {
+    background-color: #DDD0C8;
+}
+
+.nav-bar {
+    width: 100%;
+    height: 80px;
+    background-color: #333333;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 237px;
+    gap: 100px;
+    align-items: center;
+    position: ;
+}
+
+.logo {
+    color: #FFFFFF;
+}
+
+.nav-right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    color: #FFFFFF;
+}
+
+.nav-right a {
+    text-decoration: none;
+    color: white;
+}
+
+h2 {
+    font-size: 45px;
+    color: #333333;
+}
+
+.section-contact {
+    padding: 60px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(/img/background.webp);
+    width: 100%;
+    height: auto;
+}
+
+.contact {
+    display: flex;
+    justify-content: center;
+    padding: 30px 150px;
+    gap: 20px;
+    width: 100%;
+    flex-wrap: wrap;
+
+}
+
+.contact-item {
+    width: 420px;
+    height: 100px;
+    background-color: #FFFFFF;
+    border-radius: 16px;
+    box-shadow: -1px 1px 13px -1px rgba(0, 0, 0, 0.20);
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.toflex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+}
+
+.contact-item i {
+    font-size: 60px;
+    margin-left: 20px;
+}
+
+
+.contact-item h3 {
+    margin-left: 10px;
+}
+
+
+
+
+footer .footer-left {
+    width: 100%;
+    height: 100px;
+    background-color: #666666;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #d5d3d3;
+    padding: 0 100px;
+    justify-content: center;
+    gap: 10px;
+}
+
+@media screen and (min-width: 1557px) {
+    .contact-item {
+        width: 600px;
+        height: 100px;
+    }
+
+    .nav-bar {
+        width: 100%;
+        height: 80px;
+        background-color: #666666;
+        display: flex;
+        justify-content: center;
+        gap: 700px;
+        margin-left: px;
+        align-items: center;
+    }
+}
+
+@media screen and (min-width: 1350px) {}
+
+
+@media screen and (max-width: 1134px) {
+    .nav-bar {
+        padding: 0 100px;
+    }
+}
+
+@media screen and (max-width: 615px) {
+    .nav-bar {
+        padding: 0 60px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .footer-left p {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 730px) {
+    .contact {
+        padding: 30px 60px;
+    }
+}

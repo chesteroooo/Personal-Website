@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Open Sans;
+}
+
+/* 全局设置所有 heading 的 font-weight 为 700 */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 700 !important;
+    margin-bottom: 0px;
+    margin-block-end: 0px;
+}
+
+p {
+    margin-bottom: 0px;
+    margin-block-end: 0px;
+}
+
+ul {
+    padding-left: 0px;
+    margin-bottom: 0px;
+    margin-block-end: 0px;
+    margin-top: 3px;
+}
+
+h1 {
+    font-size: 24px;
+    color: #333333;
+}
+
+body {
+    background-image: url;
+    background-color: #DDD0C8;
+}
+
+.nav-bar {
+    width: 100%;
+    height: 80px;
+    background-color: #333333;
+    display: flex;
+    justify-content: center;
+    gap: 590px;
+    align-items: center;
+    position: fixed;
+    margin-top: -80px;
+}
+
+.logo {
+    color: #FFFFFF;
+}
+
+.nav-right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    color: #FFFFFF;
+}
+
+.nav-right a {
+    text-decoration: none;
+    color: white;
+}
+
+#nav-contact {
+    background-color: #DDD0C8;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 6px;
+    border: 30px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    font-size: 45px;
+    margin-bottom: 30px;
+    margin-top: 80px;
+}
+
+.design-powerpoint,
+.design-web,
+.design-others {
+    width: 100%;
+    height: auto;
+    padding: 30px 0;
+}
+
+.design-others {
+    padding-bottom: 100px;
+}
+
+.design-web {
+    background-color: #DDD0C8;
+}
+
+.design-text {
+    display: flex;
+    justify-content: center;
+    margin-left: -870px;
+    font-size: 20px;
+}
+
+.design-text h2 {
+    font-size: 28px;
+    padding: 10px 15px;
+    border-radius: 30px;
+    background-color: #787575;
+    color: #FFFFFF;
+}
+
+.design-ppt-grid {
+    display: grid;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 30px;
+    height: auto;
+    grid-template-columns: 330px 330px 330px;
+    grid-template-rows: 320px 320px;
+}
+
+.design-web-grid {
+    display: grid;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 30px;
+    height: auto;
+    grid-template-columns: 330px 330px 330px;
+    grid-template-rows: 320px;
+}
+
+.design-others-grid {
+    display: grid;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 30px;
+    height: auto;
+    grid-template-columns: 330px 330px 330px;
+    grid-template-rows: 320px;
+}
+
+.design-item {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    width: 330px;
+    height: 320px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: -1px 1px 13px -1px rgba(0, 0, 0, 0.41);
+}
+
+.design-powerpoint a,
+.design-web a,
+.design-others a {
+    width: 300px;
+    height: 170px;
+}
+
+
+.design-powerpoint img,
+.design-web img,
+.design-others img {
+    width: 300px;
+    border-radius: 5px;
+    transition: transform .2s;
+}
+
+.design-powerpoint img:hover,
+.design-web img:hover,
+.design-others img:hover {
+    transform: scale(1.18);
+    border-radius: 0;
+}
+
+.design-powerpoint h4,
+.design-web h4,
+.design-others h4 {
+    font-size: 22px;
+    margin-top: 10px;
+}
+
+.design-item h4 {
+    margin-top: 20px;
+}
+
+.design-powerpoint li,
+.design-web li,
+.design-others li {
+    list-style-type: none;
+    color: gray;
+}
+
+.design-item {
+    overflow: hidden;
+}
+
+.adjust1 {
+    margin-left: -43px;
+}
+
+.adjust2 {
+    margin-left: -65px;
+}
+
+#手冊 a {
+    overflow: hidden;
+}
+
+#名牌 img {
+    height: 168px;
+}
+
+footer {
+    width: 100%;
+    height: 100px;
+    background-color: #666666;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #d5d3d3;
+    padding: 0 100px;
+}
+
+.footer-left {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+
+.footer-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+    gap: 10px;
+}
+
+.footer-right .gmail {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #FFFFFF;
+}
+
+.footer-right .gmail i {
+    margin-bottom: -2px;
+    font-size: 20px;
+}
+
+footer .social i {
+    color: #FFFFFF;
+    font-size: 30px;
+}
+
+/* 隐藏 Carousel 并设置为全屏 */
+.d-flex {
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    /* 透明黑色背景 */
+    z-index: 1050;
+    /* Bootstrap modal 的 z-index 是 1050，因此保持一致 */
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    opacity: 0;
+    /* 使元素不可见 */
+    transition: opacity 0.3s ease;
+    /* 添加渐变效果 */
+}
+
+.d-flex.show {
+    visibility: visible;
+    opacity: 1;
+}
+
+#carousel-overlay6 .carousel-inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -133px;
+}
+
+#carouselExampleIndicators6 .carousel-indicators button {
+    z-index: 1000;
+    background-color: black;
+}
+
+#carousel-overlay7 .carousel-inner {
+    display: flex;
+    margin-left: 135px;
+}

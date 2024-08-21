@@ -1,0 +1,500 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Open Sans;
+    text-decoration: none;
+
+}
+
+/* 全局设置所有 heading 的 font-weight 为 700 */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 700 !important;
+    margin-bottom: 0px;
+    margin-block-end: 0px;
+}
+
+p {
+    margin-bottom: 0px;
+    margin-block-end: 0px;
+}
+
+ul {
+    padding-left: 0px;
+    margin-bottom: 0px;
+    margin-block-end: 0px;
+    margin-top: 3px;
+}
+
+h1 {
+    font-size: 24px !important;
+}
+
+body {
+    background-image: url;
+}
+
+.nav-bar {
+    width: 100%;
+    height: 80px;
+    background-color: #333333;
+    display: flex;
+    justify-content: center;
+    gap: 590px;
+    align-items: center;
+    position: fixed;
+    z-index: 100;
+    margin-top: -80px;
+}
+
+.logo {
+    color: #FFFFFF;
+}
+
+.nav-right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    color: #FFFFFF;
+}
+
+.nav-right a {
+    text-decoration: none;
+    color: white;
+}
+
+#nav-contact {
+    background-color: #DDD0C8;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 6px;
+    border: 30px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.intro {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 150px;
+    background-color: #DDD0C8;
+    margin-top: 80px;
+}
+
+
+.intro h3 {
+    font-size: 80px;
+    color: #797877;
+}
+
+#intro-left-h3 {
+    font-size: 65px;
+}
+
+.intro p {
+    color: #646361;
+}
+
+.intro-left {
+    width: 500px;
+}
+
+.intro .name {
+    color: #333333;
+}
+
+.selfie {
+    width: 300px;
+    height: 400px;
+}
+
+.intro-contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 170px;
+    height: 60px;
+    color: #333333;
+    margin-top: 50px;
+    border-radius: 35px;
+    border: 4px solid;
+    border-color: #333333;
+    transition: all 0.3s ease-out;
+    text-decoration: none;
+}
+
+.intro-contact:hover {
+    background-color: #333333;
+    color: #FFFFFF;
+}
+
+.intro-contact i {
+    font-size: 20px;
+    margin-top: 2px;
+}
+
+.selfie img {
+    width: 100%;
+    height: 100%;
+}
+
+.section-design {
+    width: 100%;
+    height: auto;
+    background-color: #878583;
+    padding: 80px 0;
+}
+
+.section-design-text {
+    display: flex;
+    justify-content: center;
+}
+
+.section-design-text h2 {
+    font-size: 45px;
+    margin-bottom: 30px;
+    color: white;
+}
+
+.section-design-text p {
+    font-size: 20px;
+    color: rgb(222, 221, 221);
+
+}
+
+.design {
+    display: grid;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 30px;
+    height: 680px;
+    grid-template-columns: 330px 330px 330px;
+    grid-template-rows: 320px 320px;
+}
+
+.design-item1,
+.design-item2,
+.design-item3,
+.design-item4,
+.design-item5,
+.design-item6 {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    width: 330px;
+    height: auto;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: -1px 1px 13px -1px rgba(0, 0, 0, 0.41);
+    overflow: hidden;
+}
+
+.design-item1 {
+    display: block;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.design-item2 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.design-item3 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.design-item4 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.design-item5 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.design-item6 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.design a {
+    width: 300px;
+    height: 170px;
+}
+
+
+.design img {
+    width: 300px;
+    border-radius: 5px;
+    transition: transform .2s;
+}
+
+.design-item6 a {
+    overflow: hidden;
+}
+
+.design h4 {
+    font-size: 22px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    margin-block-end: 0px;
+}
+
+.design-item1 h4 {
+    margin-top: 22px;
+}
+
+.design li {
+    list-style-type: none;
+    color: gray;
+}
+
+.design img:hover {
+    transform: scale(1.18);
+    border-radius: 0;
+}
+
+.section-design-button {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.section-design-button button {
+    font-size: 15px;
+    padding: 15px 15px;
+    background-color: white;
+    border-radius: 35px;
+    border: none;
+    box-shadow: 0px 0px 11px -5px rgba(0, 0, 0, 0.75);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.section-design-button button:hover {
+    background-color: #DDD0C8;
+    color: black;
+}
+
+.section-workExperience {
+    width: 100%;
+    height: auto;
+    background-color: #DDD0C8;
+    padding: 80px 0;
+}
+
+.workExperience-text {
+    display: flex;
+    justify-content: center;
+}
+
+.workExperience-text h2 {
+    font-size: 45px;
+    margin-bottom: 30px;
+}
+
+.workExperience-flex {
+    display: flex;
+    justify-content: center;
+}
+
+.workExperience-item {
+    width: 700px;
+    height: 200px;
+    background-color: #FFFFFF;
+    box-shadow: -1px 1px 13px -1px rgba(0, 0, 0, 0.41);
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: first center;
+    gap: 50px;
+}
+
+.workExperience-item-left-top {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+
+.workExperience-item-left-top h5 {
+    font-size: 15px;
+    padding: 5px 10px;
+    background-color: black;
+    color: white;
+    border-radius: 35px;
+    margin-bottom: 10px;
+    margin-top: -40px;
+    height: auto;
+    width: auto;
+}
+
+.workExperience-item-right {
+    cursor: pointer;
+}
+
+.workExperience-item-right img {
+    width: 300px;
+    height: 155px;
+}
+
+.section-school {
+    width: 100%;
+    height: auto;
+    background-color: #DDD0C8;
+    padding: 80px 0;
+}
+
+.section-school-text {
+    display: flex;
+    justify-content: center;
+}
+
+.section-school-text h2 {
+    font-size: 45px;
+    margin-bottom: 30px;
+}
+
+.school-item-flex {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.school-item {
+    height: auto;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: -1px 1px 13px -1px rgba(0, 0, 0, 0.41);
+}
+
+.school-item h4 {
+    font-size: 25px;
+    padding: 10px;
+    margin-bottom: 0px;
+    margin-block-end: 0px;
+}
+
+.school-item a {
+    cursor: pointer;
+}
+
+.section-school img {
+    width: 440px;
+    height: 330px;
+    margin-bottom: -5px;
+    border-end-end-radius: 5px;
+    border-bottom-left-radius: 5px;
+    transition: transform .2s;
+}
+
+.school-item img:hover {
+    opacity: 0.9;
+}
+
+footer {
+    width: 100%;
+    height: 100px;
+    background-color: #666666;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #d5d3d3;
+    padding: 0 100px;
+}
+
+.footer-left {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+
+.footer-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+    gap: 10px;
+}
+
+.footer-right .gmail {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #FFFFFF;
+}
+
+.footer-right .gmail i {
+    margin-bottom: -2px;
+    font-size: 20px;
+}
+
+footer .social i {
+    color: #FFFFFF;
+    font-size: 30px;
+}
+
+
+/* 隐藏 Carousel 并设置为全屏 */
+.d-flex {
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    /* 透明黑色背景 */
+    z-index: 1050;
+    /* Bootstrap modal 的 z-index 是 1050，因此保持一致 */
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    opacity: 0;
+    /* 使元素不可见 */
+    transition: opacity 0.3s ease;
+    /* 添加渐变效果 */
+}
+
+.d-flex.show {
+    visibility: visible;
+    opacity: 1;
+}
+
+#carousel-overlay6 .carousel-inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -133px;
+}
+
+#carouselExampleIndicators6 .carousel-indicators button {
+    z-index: 1000;
+    background-color: black;
+}

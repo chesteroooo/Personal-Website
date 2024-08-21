@@ -1,0 +1,339 @@
+body {
+    background-color: #3b5964;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+/*header*/
+header {
+    background-color: black;
+    position: fixed;
+    height: 125px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+header .btn-group {
+    display: none;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+header .logo img {
+    background-size: 300px;
+    background-repeat: no-repeat;
+    height: 100px;
+    width: 300px;
+    text-indent: -9999999px;
+}
+
+header button {
+    border: none;
+    background-color: #e31837;
+    border-radius: 5px;
+    padding: 10px 20px;
+    color: white;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ul-logo {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.class-inform {
+    display: flex;
+    margin-left: auto;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+#inform-button {
+    margin-top: -5px;
+}
+
+.section1 {
+    background-color: #3b5964;
+    width: 100%;
+    height: 800px;
+}
+
+.about-us {
+    font-family: "Noto Serif TC", serif;
+    display: relative;
+    text-align: center;
+    padding: 15% 20%;
+}
+
+.about-us h2 {
+    font-size: 2.5rem;
+}
+
+.about-us-p {
+    font-size: 1.2rem;
+    line-height: 45px;
+}
+
+.section2 {
+    margin-top: -35px;
+    background-color: #3b5964;
+    height: 600px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+}
+
+.membership {
+    font-family: "Noto Serif TC", serif;
+    display: block;
+    text-align: center;
+    padding: 60px;
+}
+
+.membership h2 {
+    font-size: 2.5rem;
+}
+
+.membership-details {
+    display: flex;
+}
+
+.membership-details div {
+    background-color: white;
+    margin: auto;
+    height: 250px;
+    width: 250px;
+    border: 3px solid white;
+    border-radius: 20px;
+    padding: 10px;
+    color: #3b5964;
+}
+
+.membership-details h2 {
+    font-size: 2rem;
+}
+
+.membership-details h4 {
+    font-size: 1.5rem;
+}
+
+.membership-details button {
+    padding: 15px 60px;
+    background-color: #3b5964;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    font-size: 15px;
+}
+
+.section3 {
+    height: 600px;
+    width: 100%;
+    background-image: url(https://live.staticflickr.com/65535/53922451520_6d7ef8ae20_o.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    margin-bottom: 0px;
+}
+
+footer {
+    background-color: black;
+    text-align: center;
+    font-size: 15px;
+    padding: 10px 20px;
+}
+
+@media screen and (max-width: 1300px) {
+
+
+    .section2 {
+        height: 1100px;
+    }
+
+    .membership-details {
+        display: inline-block;
+    }
+
+    .membership-details div {
+        background-color: white;
+        display: inline-block;
+        margin: 60px;
+        height: 250px;
+        width: 250px;
+        border: 3px solid white;
+        border-radius: 20px;
+        padding: 10px;
+        color: #3b5964;
+    }
+
+    .membership-details .mobile-membership {
+        display: inline-block;
+    }
+}
+
+@media screen and (max-width: 940px) {
+
+
+
+    .class-inform {
+        display: none;
+        margin-left: auto;
+    }
+
+    header .btn-group {
+        display: flex;
+        margin-left: auto;
+    }
+
+    header #inform-button2 {
+        border: none;
+        background-color: #e31837;
+        border-radius: 5px;
+        padding: 10px 20px;
+        color: white;
+    }
+
+
+    /* 按钮样式 */
+    .btn-group .btn {
+        border: none;
+        margin-right: 25px;
+        background-color: #e31837;
+        color: white;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+        transition: background-color 0.3s ease;
+    }
+
+    .btn-group .btn:hover {
+        background-color: #c2152a;
+    }
+
+    /* 下拉菜单样式 */
+    .dropdown-menu {
+        display: none;
+        position: absolute;
+        background-color: #ffffff;
+        border: 1px solid #ccc;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+        border-radius: 5px;
+        overflow: hidden;
+        margin-top: 10px;
+        margin-right: 25px;
+        right: 0;
+        /* 调整方向向左展开 */
+    }
+
+    .dropdown-menu .dropdown-item {
+        color: #333;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        transition: background-color 0.3s ease;
+    }
+
+    .dropdown-menu .dropdown-item:hover {
+        background-color: #ddd;
+    }
+
+    .dropdown-menu .dropdown-divider {
+        height: 1px;
+        margin: .5rem 0;
+        overflow: hidden;
+        background-color: #e9ecef;
+    }
+
+    .dropdown-menu #inform-button2 {
+        display: block;
+        width: 100%;
+        padding: 12px 16px;
+        border: none;
+        background-color: #e31837;
+        color: white;
+        cursor: pointer;
+        font-size: 16px;
+        transition: background-color 0.3s ease;
+    }
+
+    .dropdown-menu #inform-button2:hover {
+        background-color: #c2152a;
+    }
+
+    /* 显示下拉菜单 */
+    .btn-group:hover .dropdown-menu {
+        display: block;
+    }
+
+
+}
+
+@media screen and (max-width: 940px) {
+    .about-us {
+        font-family: "Noto Serif TC", serif;
+        display: relative;
+        text-align: center;
+        padding: 20% 20%;
+    }
+
+    .membership-details div {
+        margin: 20px;
+    }
+}
+
+@media screen and (max-width: 772px) {
+    .section2 {
+        height: 1600px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .section3 {
+        display: none;
+    }
+
+    .section2 {
+        height: 1600px;
+    }
+
+    .about-us {
+        font-family: "Noto Serif TC", serif;
+        display: relative;
+        text-align: center;
+        padding: 30% 20%;
+    }
+
+    .about-us h2 {
+        font-size: 2rem;
+    }
+
+    .about-us-p {
+        font-size: 1rem;
+        line-height: 45px;
+    }
+
+    .membership-details div {
+        margin: 20px;
+    }
+}

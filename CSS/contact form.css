@@ -1,0 +1,81 @@
+@import "compass/css3";
+
+*,
+*:before,
+*:after {
+    @include box-sizing(border-box);
+}
+
+
+
+form {
+    width: 860px;
+    text-align: center;
+    margin: 20px auto;
+    background-color: white;
+    padding: 20px 40px;
+    border-radius: 16px;
+    margin-top: 40px;
+    box-shadow: -1px 1px 13px -1px rgba(0, 0, 0, 0.20);
+
+    input,
+    textarea {
+        border: 0;
+        outline: 0;
+        padding: 1em;
+        display: block;
+        width: 100%;
+        margin-top: 1em;
+        resize: none;
+        box-shadow: -1px 1px 13px -1px rgba(0, 0, 0, 0.15);
+        border-radius: 8px;
+    }
+
+    #input-submit {
+        background-color: #333;
+        color: white;
+        cursor: pointer;
+    }
+
+    textarea {
+        height: 126px;
+    }
+}
+
+
+.half {
+    float: left;
+    width: 48%;
+    margin-bottom: 1em;
+}
+
+.right {
+    width: 50%;
+}
+
+.left {
+    margin-right: 2%;
+}
+
+
+@media (max-width: 480px) {
+    .half {
+        width: 100%;
+        float: none;
+        margin-bottom: 0;
+    }
+}
+
+
+/* Clearfix */
+.cf:before,
+.cf:after {
+    content: " ";
+    /* 1 */
+    display: table;
+    /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}

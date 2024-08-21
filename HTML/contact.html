@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/CSS/contact form.css">
+    <link rel="stylesheet" href="/CSS/Contact.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <title>Contact Me</title>
+  </head>
+  <body>
+    <nav class="nav-bar">
+      <div class="logo">
+        <h1>Chester Yu</h1>
+      </div>
+      <div class="nav-right">
+        <a href="/HTML/Home.html">Home</a>
+        <a href="/HTML/design.html">Design</a>
+      </div>
+    </nav>
+    <div class="section-contact">
+      <h2>Contact Me</h2>
+        <form class="cf" id="contact-form">
+          <div class="half left cf">
+            <input type="text" id="input-name" name="name" placeholder="Name" required>
+            <input type="email" id="input-email" name="email" placeholder="Email address" required>
+            <input type="text" id="input-subject" name="subject" placeholder="Subject" required>
+          </div>
+          <div class="half right cf">
+            <textarea name="message" id="input-message" placeholder="Message" required></textarea>
+          </div>  
+          <input type="submit" value="Submit" id="input-submit">
+        </form>
+      <div class="contact">
+        <div class="contact-item">
+          <div id="gmail" class="toflex">
+            <i class='bx bxl-gmail' ></i>
+            <h3>chester0612yu@gmail.com</h3>
+          </div>
+        </div>
+        <div class="contact-item">
+          <a class="toflex" href="https://github.com/chesteroooo" target="_blank">
+            <i class='bx bxl-github'></i>
+            <h3>chesteroooo</h3>
+          </a>
+        </div>
+        <div class="contact-item">
+          <a class="toflex" href="https://www.instagram.com/dlalytwo/" target="_blank">
+            <i class='bx bxl-instagram'></i>
+            <h3>dlalytwo</h3>
+          </a>
+        </div>
+        <div class="contact-item">
+          <a class="toflex" href="https://www.facebook.com/profile.php?id=100018881383762&locale=zh_TW" target="_blank">
+            <i class='bx bxl-facebook-circle' ></i>
+            <h3>俞其均</h3>
+          </a>
+        </div>
+      </div>
+    </div>
+    <footer>
+        <div class="footer-left">
+            <p>&COPY</p>
+            <p>Copyright 2024. Chester Yu. All Rights Reserved </p>
+        </div>
+    </footer>
+    <script src="/JS/sandgrid.js"></script>
+  </body>
+</html>
